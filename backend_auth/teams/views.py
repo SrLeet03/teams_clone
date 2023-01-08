@@ -38,7 +38,7 @@ def add_member_to_team(request):
         team.save()
         return JsonResponse({
             'status':200,
-            'msg':'added member to team'
+            'msg':'added member  to team'
         })
     except Exception as e:
         return JsonResponse({
