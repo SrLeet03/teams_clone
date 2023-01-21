@@ -1,0 +1,25 @@
+{
+  "name": "chat-service",
+  "version": "1.0.0",
+  "description": "A simple chat server using Node.js and Socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SrLeet03/teams_clone.git"
+  },
+  "author": "sarvesh,shreyansh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SrLeet03/teams_clone/issues"
+  },
+  "homepage": "https://github.com/SrLeet03/teams_clone#readme",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.5.4"
+  }
+}
