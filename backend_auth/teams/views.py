@@ -33,7 +33,13 @@ def add_member_to_team(request):
         team = request.data['uid']
         
         user = User.objects.get(username = user)
-        team = User.objects.get(uid = team)
+        team = teams.objects.get(uid = team)
+        if teams.objects.filter(members=user).exists():
+            return JsonResponse({
+            'status':400,
+            'msg':'user is already a team member'
+           })
+
         team.members.add(user)
         team.save()
         return JsonResponse({
